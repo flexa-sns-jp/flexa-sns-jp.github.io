@@ -361,6 +361,78 @@ img { max-width: 100%; display: block; }
 .price-list li.disabled { color: #bbb; }
 .price-card .btn { margin-top: auto; }
 
+/* ===== Web制作サービス ===== */
+.web-service { background: var(--white); padding: 100px 0; }
+.plan-compare {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 56px;
+  flex-wrap: wrap;
+}
+.plan-card {
+  background: var(--gray);
+  border-radius: 24px;
+  padding: 40px 36px;
+  width: 420px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+.ai-plan { border-color: rgba(0,188,212,0.3); }
+.craft-plan {
+  background: linear-gradient(135deg, #0f1964 0%, #1a237e 100%);
+  border-color: var(--teal);
+  box-shadow: 0 12px 40px rgba(15,25,100,0.25);
+}
+.plan-badge {
+  display: inline-block;
+  background: rgba(0,188,212,0.15);
+  color: var(--teal);
+  border: 1px solid var(--teal);
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+.craft-badge { background: var(--teal); color: white; border-color: var(--teal); }
+.plan-desc { font-size: 15px; line-height: 1.8; color: var(--text-light); }
+.craft-plan .plan-desc { color: rgba(255,255,255,0.75); }
+.plan-features { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.plan-features li { font-size: 14px; color: var(--text); }
+.craft-plan .plan-features li { color: rgba(255,255,255,0.9); }
+.plan-prices {
+  background: rgba(0,0,0,0.04);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.craft-plan .plan-prices { background: rgba(255,255,255,0.08); }
+.plan-price-item { display: flex; justify-content: space-between; align-items: center; }
+.plan-price-label { font-size: 13px; color: var(--text-light); font-weight: 500; }
+.craft-plan .plan-price-label { color: rgba(255,255,255,0.6); }
+.plan-price-val { font-size: 18px; font-weight: 900; color: var(--navy); }
+.craft-plan .plan-price-val { color: var(--teal); }
+.plan-vs {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+@media (max-width: 900px) {
+  .plan-compare { flex-direction: column; align-items: center; }
+  .plan-vs { transform: rotate(90deg); }
+  .plan-card { width: 100%; max-width: 420px; }
+}
+
 /* ===== 対象業種 ===== */
 .target { padding: 100px 0; background: var(--white); }
 .target-grid {
