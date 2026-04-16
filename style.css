@@ -566,6 +566,28 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
 }
 .plan-radio input[type="radio"] { accent-color: var(--teal); width: 16px; height: 16px; }
+.service-check {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.service-check label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.service-check label:hover { border-color: var(--teal); background: rgba(0,188,212,0.1); }
+.service-check input[type="checkbox"] { accent-color: var(--teal); width: 16px; height: 16px; }
+@media (max-width: 600px) { .service-check { grid-template-columns: 1fr; } }
 .btn-submit {
   width: 100%;
   background: var(--teal);
